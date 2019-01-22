@@ -10,6 +10,8 @@ namespace _08_Challenge
     {
         static void Main(string[] args)
         {
+            _08ProgramUI program = new _08ProgramUI();
+            program.Run();
         }
     }
 }

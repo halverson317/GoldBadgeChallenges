@@ -8,16 +8,16 @@ namespace _08_Challenge
 {
     class DDRepo
     {
-        List<DriverData> _driver = new List<DriverData>();
+        List<DriverData> _driverInfo = new List<DriverData>();
 
         public void AddDriverToList(DriverData driver)
         {
-            _driver.Add(driver);
+            _driverInfo.Add(driver);
         }
 
         public List<DriverData> GetDriverInfo()
         {
-            return _driver;
+            return _driverInfo;
         }
 
         public decimal CalculateDriverPremiumPartOne(DriverData driver)
@@ -67,6 +67,19 @@ namespace _08_Challenge
 
             return rollStat;
 
+        }
+
+        internal decimal TotalPremiumCost(DriverData driver)
+        {
+            decimal baseCost = 20.0m;
+
+            decimal sLcharge = CalculateDriverPremiumPartOne(driver);
+            decimal swerveState = CalculateDriverPremiumPartTwo(driver);
+            decimal rollStat = CalculateDriverPremiumPartThree(driver);
+            decimal tailgateStat = CalculateDriverPremiumPartFour(driver);
+
+            decimal totalPremiumCost = sLcharge + swerveState + rollStat + tailgateStat + baseCost;
+            return totalPremiumCost;
         }
 
         public decimal CalculateDriverPremiumPartFour(DriverData driver)

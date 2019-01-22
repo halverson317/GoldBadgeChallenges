@@ -16,13 +16,13 @@ namespace _08_Challenge
         public int RollSS { get; set; }
         public int Tailgate { get; set; }
 
-        public DriverData(int smartCarID, int overSL, int swerve, int rollSS, int Talgate)
+        public DriverData(int smartCarID, int overSL, int swerve, int rollSS, int tailgate)
         {
             SmartCarID = smartCarID;
             OverSL = overSL;
             Swerve = swerve;
             RollSS = rollSS;
-            Tailgate = Tailgate;
+            Tailgate = tailgate;
 
         }
 
