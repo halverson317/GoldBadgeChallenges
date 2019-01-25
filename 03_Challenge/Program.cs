@@ -10,7 +10,7 @@ namespace _03_Challenge
     {
         static void Main(string[] args)
         {
-            _03ProgramUI program = new _03ProgramUI();
+            ProgramUI program = new ProgramUI();
             program.Run();
         }
     }

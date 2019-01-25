@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _08_Challenge
 {
-    class DriverData
+    public class DriverData
     {
         //properies set as int will reflect %s rounded up or down to nearest whole number//
 

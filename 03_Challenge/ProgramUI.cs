@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _03_Challenge
 {
-    public class _03ProgramUI
+    public class ProgramUI
     {
         //add a field to call on repository
         OutingRepo _outingRepo = new OutingRepo();

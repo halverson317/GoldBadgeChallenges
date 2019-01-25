@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _05_Challenge
 {
-    class CustRepo
+    public class CustRepo
     {
         List<Customer> _customers = new List<Customer>();
 

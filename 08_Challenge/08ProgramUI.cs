@@ -35,7 +35,7 @@ namespace _08_Challenge
 
             //public DriverData(int smartCarID, int overSL, int swerve, int rollSS, int Talgate)
             DriverData driver = new DriverData(smartCarID, overSL, swerve, rollSS, tailgate);
-            _driver.AddDriverToList(driver);
+            //_driver.AddDriverToList(driver);
             decimal totalCost = _driver.TotalPremiumCost(driver);
 
             Console.Clear();

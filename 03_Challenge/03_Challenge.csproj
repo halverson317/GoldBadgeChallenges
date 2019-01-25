@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="03ProgramUI.cs" />
+    <Compile Include="ProgramUI.cs" />
     <Compile Include="OutingInfo.cs" />
     <Compile Include="OutingRepo.cs" />
     <Compile Include="Program.cs" />

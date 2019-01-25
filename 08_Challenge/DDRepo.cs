@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _08_Challenge
 {
-    class DDRepo
+    public class DDRepo
     {
         List<DriverData> _driverInfo = new List<DriverData>();
 
@@ -69,16 +69,16 @@ namespace _08_Challenge
 
         }
 
-        internal decimal TotalPremiumCost(DriverData driver)
+        public decimal TotalPremiumCost(DriverData driver)
         {
             decimal baseCost = 20.0m;
 
             decimal sLcharge = CalculateDriverPremiumPartOne(driver);
-            decimal swerveState = CalculateDriverPremiumPartTwo(driver);
+            decimal swerveStat = CalculateDriverPremiumPartTwo(driver);
             decimal rollStat = CalculateDriverPremiumPartThree(driver);
             decimal tailgateStat = CalculateDriverPremiumPartFour(driver);
 
-            decimal totalPremiumCost = sLcharge + swerveState + rollStat + tailgateStat + baseCost;
+            decimal totalPremiumCost = sLcharge + swerveStat + rollStat + tailgateStat + baseCost;
             return totalPremiumCost;
         }
 
